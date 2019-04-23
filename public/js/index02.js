@@ -24,12 +24,12 @@
                         </div>
                     </li>
                     <li class="xw-li">
-                        <img src="`+result[2].img_url+`" alt="">
-                        <div>
-                            <h3><a href="">`+result[2].nt+`</a></h3>
-                            <h5>`+result[2].content+`</h5>
-                        </div>
-                    </li>
+                    <img src="`+result[2].img_url+`" alt="">
+                    <div>
+                        <h3><a href="">`+result[2].nt+`</a></h3>
+                        <h5>`+result[2].content+`</h5>
+                    </div>
+                </li>
               `
           )  ;
           $("#ul2").html(
