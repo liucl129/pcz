@@ -3,7 +3,7 @@ $(function(){
      
     // 获取关于我们文字
     $.ajax({
-        url:"http://127.0.0.1:3000/product/add",
+        url:"product/add",
         type:"get",
         data:{},
         dataType:"json",
@@ -14,7 +14,7 @@ $(function(){
     });
     // 获取首页案例图片
     $.ajax({
-        url:"http://127.0.0.1:3000/product/img",
+        url:"product/img",
         type:"get",
         data:{},
         dataType:"json",
@@ -45,7 +45,7 @@ $(function(){
     });
     // 首页新闻
     $.ajax({
-        url:"http://127.0.0.1:3000/product/new",
+        url:"product/new",
         type:"get",
         data:{},
         dataType:"json",

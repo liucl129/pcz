@@ -2,7 +2,7 @@ $(function(){
 //设计页
 
 $.ajax({
-    url:"http://127.0.0.1:3000/product/sheji",
+    url:"product/sheji",
     type:"get",
     data:{},
     dataType:"json",

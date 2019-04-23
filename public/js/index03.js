@@ -1,7 +1,7 @@
 $(function(){
  // 案例页
  $.ajax({
-    url:"http://127.0.0.1:3000/product/anli",
+    url:"product/anli",
     type:"get",
     data:{},
     dataType:"json",

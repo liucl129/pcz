@@ -1,7 +1,7 @@
 $(function(){
     // 新闻页
      $.ajax({
-         url:"http://127.0.0.1:3000/product/anli01",
+         url:"product/anli01",
          type:"get",
          data:{},
          dataType:"json",
