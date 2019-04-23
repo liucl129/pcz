@@ -1,7 +1,7 @@
    $(function(){
    // 新闻页
     $.ajax({
-        url:"product/new",
+        url:"product/new1",
         type:"get",
         data:{},
         dataType:"json",
