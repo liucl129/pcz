@@ -166,6 +166,9 @@
                             if(!regg.test(u)){
                                 $(this).val("");
                                 sts.innerHTML=("手机号长度必须为11位")
+                                setTimeout(function(){//1秒后执行 让提示消失
+                                sts.innerHTML=("")
+                            },1000)
                                 return; 
                             }
                         });
@@ -183,13 +186,22 @@
                         
                         if(result.code==401){
                             sts.innerHTML=("将信息补充完整")
+                            setTimeout(function(){//1秒后执行 让提示消失
+                                sts.innerHTML=("")
+                            },1000)
                             return;
                         }
                         else if(result.code==402){
                             sts.innerHTML=("将信息补充完整")
+                            setTimeout(function(){//1秒后执行 让提示消失
+                                sts.innerHTML=("")
+                            },1000)
                             return;
                         }else if(result.code==404){
                             sts.innerHTML=("将信息补充完整")
+                            setTimeout(function(){//1秒后执行 让提示消失
+                                sts.innerHTML=("")
+                            },1000);
                             return;
                         }
                         else{
@@ -197,7 +209,7 @@
                             $(" #txt").val("");
                             $("#sname").val("");
                             $("#tel").val("");
-                            setTimeout(function(){
+                            setTimeout(function(){//1秒后执行 让提示消失
                                 stss.innerHTML=("")
                             },1000)
                         }
