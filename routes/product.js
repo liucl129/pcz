@@ -30,7 +30,7 @@ router.get("/new",(req,res)=>{
 })
 // 新闻页
 router.get("/new1",(req,res)=>{
-    var sql="select nt,content,img_url from index_new1 limit 0,3";
+    var sql="select nt,content,img_url from index_new1 limit 0,6";
     pool.query(sql,(err,result)=>{
         if(err) throw err;
         res.send(result);
