@@ -275,7 +275,7 @@
                     var reg_upwd=$("#reg_upwd").val();
                     var phone=$("#phone").val();
                     $.ajax({
-                        url:"http://127.0.0.1:3000/user/reg",
+                        url:"user/reg",
                         type:"post",
                         data:{
                             uname:reg_uname,
@@ -312,7 +312,7 @@
                         }else if(test==str){
                             console.log(1)
                             $.ajax({
-                                url:"http://127.0.0.1:3000/user/login",
+                                url:"user/login",
                                 type:"post",
                                 data:{
                                     uname:login_uname,
