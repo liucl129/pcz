@@ -193,14 +193,13 @@
                             return;
                         }
                         else{
-                            setTimeout(function(){
-                                stss.innerHTML=("留言成功");
-                               
-                            },1000) ;
-                            stss.innerHTML=("");
+                            stss.innerHTML=("留言成功");
                             $(" #txt").val("");
                             $("#sname").val("");
                             $("#tel").val("");
+                            setTimeout(function(){
+                                stss.innerHTML=("")
+                            },1000)
                         }
                     });
              });
