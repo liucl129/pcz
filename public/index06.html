@@ -125,10 +125,12 @@
                 </header>
         <img src="img/b1.jpg" alt="">
         <div class="btm_right fr1">
-            <div style="width: 200px;height: 50px;border: 0;background: #272624;"> <span id="sts" style="color: #fd9191"></span></div>
-               
+            <!-- 提示框 -->
+            <div style="width: 200px;height: 50px;border: 0;background: #272624;"> 
+                <span id="sts" style="color: #fd9191"></span>
+                <span id="stss" style="color: greenyellow"></span>
+            </div>
                 <h2>咨询留言:</h2>
-                
                 <div action="" class="form fl1">
                   <textarea name="content" id="txt" cols="30" rows="10" maxlength="120" placeholder="请输入咨询内容"></textarea>
                   <p class="input_p clear"> 
@@ -191,7 +193,7 @@
                             return;
                         }
                         else{
-                            sts.innerHTML=("留言成功")
+                            stss.innerHTML=("留言成功")
                             $(" #txt").val("");
                             $("#sname").val("");
                             $("#tel").val("");

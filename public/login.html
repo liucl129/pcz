@@ -289,7 +289,7 @@
                            spn8.innerHTML=("请完善信息，将信息补充完整")
                             return;
                         }else{
-                            alert("注册成功")
+                            spn8.innerHTML=("注册成功")
                             login.style.display="block";
                             reg.style.display="none";
                             // return;
@@ -310,7 +310,6 @@
                             spn7.innerHTML=("请输入验证码")
                             return;
                         }else if(test==str){
-                            console.log(1)
                             $.ajax({
                                 url:"user/login",
                                 type:"post",
@@ -320,19 +319,16 @@
                                 },
                                 dataType:"json",
                                 success:function(result){
-                                    console.log(result)
                                     if(result.code==301){
                                         spn6.innerHTML=("账户或密码错误")
                                         return;
                                     }else{
-                                        
-                                        console.log(111)
                                         window.location.href=`index.html?uname=${login_uname}`
                                     }
                                 }
                             })
                         }else{
-                          alert("验证码不正确");
+                          spn6.innerHTML=("验证码不正确");
                           window.location.href="login.html"
                           test(ctx);
                         }       
