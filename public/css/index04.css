@@ -1,0 +1,164 @@
+*{margin: 0;padding: 0;}
+ #sj-top-img img{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;margin: 0;
+    
+} 
+ #SJ{
+     background: #272624;
+     overflow: hidden;
+    }
+div p{
+    color:#fee301;
+    font-size: 2rem;
+}
+div span{
+    color:#fff;
+    font-size:1.2rem;
+}
+.sj-p{
+    /* width: 100%; */
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    font-size: 2rem;
+    position: relative;
+    left: -100px;
+    opacity:1;
+    transition: all 1s linear;
+}
+#txt{
+    opacity: 1 !important;
+    left: 100px !important;
+}
+/* 中间 */
+
+/* 风格部分 */
+#al-center{
+    display: flex;
+    justify-content: space-around;
+}
+/* 左侧 */
+#al-left{
+    width: 25%;
+    border: 1px solid #ccc;
+    border-left:none;
+    border-bottom:none;
+    height: 500px;
+}
+#al-left ul{
+    list-style: none;
+    margin: 20px 0px 0px 130px;
+    
+}
+#al-left ul li{margin: 0px 0px 30px 0px;}
+#al-left ul li a{
+   text-decoration: none;
+   color:#ccc;
+    font-size:1.3rem; 
+    
+}
+#al-left ul li:hover a{
+    color:#ffe401;
+}
+/* 右侧 */
+.al-right{
+    width: 75%;
+    border:1px solid #ccc;
+    border-left:none;
+    border-bottom:none;
+    height: 500px;
+    overflow: hidden;
+    
+}
+.al-right ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 100px;
+   
+}
+.al-right ul li img{
+    border-radius: 5%;
+    cursor:pointer;
+}
+.al-right ul li h3{
+    color: #ccc;
+    font-size:1.5rem;
+    font-weight: 100;
+    margin-top: -50px;
+    margin-left: 110px;
+    z-index: 1;
+}
+.al-right ul li{
+    border-radius: 5%;
+}
+
+
+.al-right ul{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.al-right ul li img{
+    width: 300px;
+    height: 300px;
+    transition:.6s;
+    transform:scale(1.06);
+}
+.al-right ul li a{
+    /* width: 300px;
+    height: 300px; */
+    margin: 0 auto;
+    position:relative;
+    display:block;
+}
+.al-right ul li a::before{
+    content:"";
+    display:block;
+    position:absolute;
+    left: 0;
+    top: 0;
+    /* width: 300px;
+    height: 300px; */
+    background: rgba(255,255,255,0.5);
+    transition:.6s;
+    opacity: 0;
+    z-index:10;
+    
+}
+.al-right ul li:hover a::before{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 25px;
+    background: rgba(77, 75, 75, 0.5);
+    opacity: 1;
+}
+.al-right ul li:hover img{
+    transform: scale(1);
+}
+
+
+
+.al-right ul li div{background:rgba(255, 255, 255, 0.5);}
+/* 底部 */
+#al-foot{
+    width: 100%;
+    height: 100px;
+    background: #1d1c18;
+    position: relative;
+}
+#al-foot>a img{
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+}
+#al-foot p{
+    color: #ccc;
+    font-size:0.8rem; 
+    text-align: center;
+    line-height: 100px;
+}

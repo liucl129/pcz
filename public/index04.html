@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设计团队</title>
+    <link rel="stylesheet" href="css/index04.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body onload="h()">
+        <header id="header">
+                <div>
+                    <ul class="dropdown-li">
+                        <li class="dropdown"><a href="index.html">首页</a></li>
+                        <li class="dropdown"><a href="index01.html">关于我们</a></li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index02.html">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Javascript:;">公司新闻</a></li>
+                                <li><a href="Javascript:;">行业新闻</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index03.html">案例展示</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index03_01.html">现代风格</a>
+                                </li>
+                                <li>
+                                   <a href="index03_02.html">欧式风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_03.html">阳台风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_04.html">中式风格</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="index05.html">工艺服务</a></li>
+                        <li class="dropdown"><a href="index04.html"style="color: #fee301">设计团队</a></li>
+                        <li class="dropdown"><a href="index06.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </header>
+    <div id="SJ">
+        <div id="sj-top-img"><img src="img/b1.jpg" alt=""></div>
+            <!-- 案例展示CASE -->
+        <div id="sj" class="sj-p">
+            <p>设计团队<span>TEAM</span></p>
+        </div>
+        <!-- <hr> -->
+        <div id="al-center">
+            <!-- 左 -->
+            <div id="al-left">
+                
+            </div>
+            <!-- 右 -->
+            <div class="al-right">
+                    <!-- 现 -->
+                    <!-- <ul class="show" id="ul1">
+                        <li>
+                            <a href="">
+                            <img src="img/1-1PH6162A1M1.jpg" alt="">                       
+                            </a><h3>案例一</h3>
+                        </li>
+                        <li> 
+                            <a href="">
+                            <img src="img/1-1PH6162G5H6.jpg" alt="">                      
+                        </a><h3>案例二</h3>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="img/1-1PR411192H33.jpg" alt="">
+                            </a>
+                            <div><h3>案例三</h3></div>
+                        </li>
+                    </ul>  -->
+    
+            </div>
+        </div>
+    </div>
+    <!-- <div id="sj-foot"></div>        -->
+    <!-- 底脚 -->
+    
+    <div id="al-foot">
+            <a href="#"><img src="img/top.png" alt=""></a>
+            <p>Copyright © 2019 版权所有 备案号：ICP备XXXXXXXX号 技术支持</p>
+        </div>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/index04.js"></script>
+    <script>
+        var id=document.querySelector("sj");
+        // console.log(id);
+        function h(){
+            sj.setAttribute("id","txt"); 
+            // console.log(1213);    
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+            //鼠标进入按钮父元素的div时，菜单显示
+            // console.log($("[data-trigger=dropdown]").parent());
+            $("[data-trigger=dropdown]").parent()
+            .mouseover(function(){
+                // console.log(111)
+                //this->父元素div
+                //查找父元素下孩子中最后一个孩子，让其显示
+                $(this).children().last().show();
+                // console.log( $(this).children().last());
+            })
+            //return $parent
+            //鼠标移出按钮的 父元素嫡女时，菜单隐藏
+            .mouseout(function(){
+                $(this).children().last().hide();
+                // console.log(12132)
+            })
+            // console.log($(".dropdow"));
+            $(".aaa").click(function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+                
+            })
+    </script>
+</body>
+</html>

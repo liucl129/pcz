@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>header</title>
+    <link rel="stylesheet" href="css/header.css">
+    
+    <style>
+        .active{color: #ffe401 !important;}
+    </style>
+</head>
+<body>
+    
+ <header id="header">
+    <div>
+        <ul class="dropdown-li">
+            <li class="dropdown "><a href="Javascript:;" class="aaa">首页</a></li>
+            <li class="dropdown "><a href="Javascript:;" class="aaa">关于我们</a></li>
+            <li class="dropdown ">
+                <a data-trigger="dropdown" href="Javascript:;" class="aaa">新闻动态</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:;">公司新闻</a></li>
+                    <li><a href="Javascript:;">行业新闻</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a data-trigger="dropdown" href="Javascript:;" class="aaa">案例展示</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="Javascript:;">现代风格</a>
+                    </li>
+                    <li>
+                       <a href="Javascript:;">欧式风格</a>
+                    </li>
+                    <li>
+                        <a href="Javascript:;">阳台风格</a>
+                    </li>
+                    <li>
+                        <a href="Javascript:;">中式风格</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="Javascript:;" class="aaa">公益服务</a></li>
+            <li class="dropdown"><a href="Javascript:;" class="aaa">设计团队</a></li>
+            <li class="dropdown"><a href="Javascript:;" class="aaa">联系我们</a></li>
+        </ul>
+    </div>
+</header>
+    <script src="../Bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+            //鼠标进入按钮父元素的div时，菜单显示
+            // console.log($("[data-trigger=dropdown]").parent());
+			$("[data-trigger=dropdown]").parent()
+			.mouseover(function(){
+                // console.log(111)
+				//this->父元素div
+				//查找父元素下孩子中最后一个孩子，让其显示
+                $(this).children().last().show();
+                // console.log( $(this).children().last());
+			})
+			//return $parent
+			//鼠标移出按钮的 父元素嫡女时，菜单隐藏
+			.mouseout(function(){
+                $(this).children().last().hide();
+                // console.log(12132)
+            })
+            // console.log($(".dropdow"));
+            $(".aaa").click(function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+                
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "pcz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liucl129/pcz.git"
+  },
+  "keywords": [
+    "sheji"
+  ],
+  "author": "lcl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liucl129/pcz/issues"
+  },
+  "homepage": "https://github.com/liucl129/pcz#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
+  }
+}

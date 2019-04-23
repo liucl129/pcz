@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>工艺服务</title>
+    <link rel="stylesheet" href="css/index05.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body onload="h()">
+        <header id="header">
+                <div>
+                    <ul class="dropdown-li">
+                        <li class="dropdown"><a href="index.html">首页</a></li>
+                        <li class="dropdown"><a href="index01.html">关于我们</a></li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index02.html">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Javascript:;">公司新闻</a></li>
+                                <li><a href="Javascript:;">行业新闻</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index03.html">案例展示</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index03_01.html">现代风格</a>
+                                </li>
+                                <li>
+                                   <a href="index03_02.html">欧式风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_03.html">阳台风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_04.html">中式风格</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="index05.html"style="color: #fee301">工艺服务</a></li>
+                        <li class="dropdown"><a href="index04.html">设计团队</a></li>
+                        <li class="dropdown"><a href="index06.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </header>
+    <div id="SJ">
+        <div id="sj-top-img"><img src="img/b1.jpg" alt=""></div>
+            <!-- 案例展示CASE -->
+        <div id="sj" class="sj-p">
+            <p>设计团队<span>TEAM</span></p>
+        </div>
+        <!-- <hr> -->
+        <div id="al-center">
+            <!-- 左 -->
+            <div id="al-left">
+                
+            </div>
+            <!-- 右 -->
+            <div class="al-right">
+                    <!-- 现 -->
+                    <ul class="show" id="ul1">
+                        <li>                          
+                            <p> 装修流程 — 咨询和签订合同阶段：</p>
+                            <p>1、电话或通过客服在线进行咨询，选择最合适的设计师，并预约现场勘察；</p>
+                            <p>2、现场测量，对装修风格、空间功能划分等与您进行初步沟通；</p>
+                            <p>3、征求客户的意见后，我们将在三个工作日内给出二到三套方案</p>
+                            <p>4、满意后签订设计合同，同时深化设计图纸，支付50%设计费用；</p>
+                            <p>5、您对全套施工图确认后二个工作日内给出报价和效果图；</p>
+                        </li>
+                        <li> 
+                            <p>装修流程 — 纯设计项目跟踪：</p>
+                            <p>1、开工交底，支付设计费50%；</p>
+                            <p>2、施工过程中到现场三次</p>
+                            <p>3、最后一次陪购，付清剩余设计费5%</p>
+                        </li>
+                        <li>
+                           <p>装修流程 — 设计及施工项目跟踪：</p>
+                           <p>1、开工时，项目经理，水电工程师、设计师现场交底，交付《告知客户书》；支付设计费50%和工程款30%；</p>
+                           <p>2、隐蔽工程结束，项目经理组织验收，记录成盘保存，付工程款35%；</p>
+                           <p>3、泥木工进场施工，设计交底，项目经理进行施工工艺指导，支付工程款30%；</p>
+                           <p>4、泥木验收，项目经理进行成品保护；</p>
+                           <p>5、工程竣工，项目经理组织验收，并拍摄存档，增加项目结算，一次性付清100%；</p>
+                           <p>6、在施工过程中，装饰设计公司的相关部门包括消防申报员、空调工程师、弱电工程师、家具工程师等进行协作。</p>
+                           <p>7、最后，客户入住，家具进场，弱电安装调试，空调调试，消防申验，我们对整体工程开据保修单。</p> 
+                        </li>
+                    </ul> 
+    
+            </div>
+        </div>
+    </div>
+    <!-- <div id="sj-foot"></div>        -->
+    <!-- 底脚 -->
+    <div id="al-foot">
+        <a href="#"><img src="img/top.png" alt=""></a>
+        <p>Copyright © 2019 版权所有 备案号：ICP备XXXXXXXX号 技术支持</p>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        var id=document.querySelector("sj");
+        // console.log(id);
+        function h(){
+            sj.setAttribute("id","txt"); 
+            // console.log(1213);    
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+            //鼠标进入按钮父元素的div时，菜单显示
+            // console.log($("[data-trigger=dropdown]").parent());
+            $("[data-trigger=dropdown]").parent()
+            .mouseover(function(){
+                // console.log(111)
+                //this->父元素div
+                //查找父元素下孩子中最后一个孩子，让其显示
+                $(this).children().last().show();
+                // console.log( $(this).children().last());
+            })
+            //return $parent
+            //鼠标移出按钮的 父元素嫡女时，菜单隐藏
+            .mouseout(function(){
+                $(this).children().last().hide();
+                // console.log(12132)
+            })
+            // console.log($(".dropdow"));
+            $(".aaa").click(function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+                
+            })
+    </script>
+</body>
+</html>

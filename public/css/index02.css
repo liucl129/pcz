@@ -1,0 +1,132 @@
+*{margin: 0;padding: 0;}
+/* 背景图片 */
+.xw-top-img img{width: 100%;}
+/* 新闻篇 */
+/* 背景颜色 */
+.XW{background-color: #272624;}
+
+/* 中间标题 */
+/* #xw-mid{
+    margin-left: 110px;
+    padding: 20px 0px 20px 0px;
+    opacity: 0;
+}
+#xw-mid p{
+    font-size: 2rem;
+    color:#ffe401;
+}
+#xw-mid span{
+    font-size: 1.3rem;
+    color: #fff;
+} */
+
+ .xw-mid{  
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    transition: all 0.9s linear;
+}
+.xw-mid p{
+    color:#fee301;
+    font-size:2rem;
+}
+.xw-mid p span{
+    color:#fff;
+    font-size:1.2rem;
+    margin: 0px 0px 0px 10px;
+} 
+#hs{
+    opacity:1 !important;
+    left:0px !important;
+    margin: 0px 0px 0px 120px;
+}
+
+/* 新闻动态 NEWS 字体颜色 黄色 */
+#count{
+    display: flex;
+    justify-content: space-around;
+}
+/* 左侧部分 */
+#xw_left{
+    width: 30%;
+    border: 1px solid #ccc;
+    border-left:none;
+    border-bottom: none;
+    height: 800px;
+}
+#xw_left ul li,#xw_left ul li a{
+    list-style: none;
+    color:#ccc;
+    font-size:1.3rem;
+    margin: 20px 0px 0px 70px;
+    text-decoration: none;
+}
+#xw_left ul li:hover a{
+    color:#ffe401;
+}
+/* 右侧新闻内容部分 */
+.xw_right{
+    width:70%;
+    border: 1px solid #ccc;
+    border-left:none;
+    border-bottom: none;
+    height: 800px;
+}
+.xw_right>ul>li{
+    list-style: none;
+    color: red;
+    display: flex;
+    margin-top:50px;
+    line-height: 30px;
+    margin-left:20px;
+   
+}
+.xw_right>ul>li>img{
+    border-radius: 2%;
+    transition: 0.5s linear;
+}
+#xw_right>ul>li:hover img{
+    transform: scale(1.05); 
+    transition: 0.5s linear;
+}
+.xw_right div{
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.xw_right div h3 a{
+    text-decoration: none;
+    color:#fff;
+}
+.xw_right div h3:hover a{
+    color: #ffe401;
+}
+.xw_right div h5{
+    color:#ccc;
+}
+#xw-foot{
+    background: #1d1c18;
+    height: 100px;
+}
+/* 底部 */
+#al-foot{
+    width: 100%;
+    height: 100px;
+    background: #1d1c18;
+    position: relative;
+}
+#al-foot>a img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+}
+#al-foot p{
+    color: #ccc;
+    font-size:0.8rem; 
+    text-align: center;
+    line-height: 100px;
+}

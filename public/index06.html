@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>留言板</title>
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+         .active{color: #ffe401 !important;}
+        body{
+            background: #272624;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        } 
+        h2{
+            width: 117px;
+            height: 40px;
+            text-align: center;
+            /* margin: 100 auto; */
+            position: relative;
+            left: 37%;
+            margin-top: 10px;
+            border-radius: 6px;
+            background: rgb(94, 86, 86);
+            color: aliceblue;
+            /* left: 320px; */
+        }
+        textarea#txt{
+            width: 447px;
+            margin-left: 24px;margin-top: 0px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background: rgb(241, 239, 239);
+        }
+        .btm_right div{
+            width: 500px;
+            height: 350px;
+            border:1px solid #ccc;
+            color: #ccc;
+           margin: 0 auto;
+           background: #474646;
+           display: flex;
+           flex-flow: column;
+           justify-content:center;
+           margin-top: 20px;
+            
+        }
+        #areaCont{
+            width: 455px;
+            color: aliceblue;
+            background: #474646;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        p{
+            margin-left: 25px;
+        }
+        input{
+            width: 447px;
+            height: 30px;
+            background: #474646;
+            border-radius: 7px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            color: aliceblue;
+        }
+        div>div>div>p{transition: 1s;}
+        .btn{
+            height: 50px;            
+            width: 450px;
+            background: #352e2e;
+            color: #ccc;
+            font-size: 15px;
+            margin-left: 0px;
+            transition: 1s;
+        }
+        .btn:hover{
+            background: #4e0101;
+        }
+        /* #div{
+            
+            width: 100%;height: 700px;
+            overflow: hidden;
+        } */
+    </style>
+</head>
+<body>
+    <div id="div">
+            <header id="header">
+                    <div>
+                        <ul class="dropdown-li">
+                            <li class="dropdown "><a href="index.html" class="aaa">首页</a></li>
+                            <li class="dropdown "><a href="index01.html" class="aaa">关于我们</a></li>
+                            <li class="dropdown ">
+                                <a data-trigger="dropdown" href="index02.html" class="aaa">新闻动态</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Javascript:;">公司新闻</a></li>
+                                    <li><a href="Javascript:;">行业新闻</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-trigger="dropdown" href="index03.html" class="aaa">案例展示</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="index03_01.html">现代风格</a>
+                                    </li>
+                                    <li>
+                                       <a href="index03_02.html">欧式风格</a>
+                                    </li>
+                                    <li>
+                                        <a href="index03_03.html">阳台风格</a>
+                                    </li>
+                                    <li>
+                                        <a href="index03_04.html">中式风格</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="index05.html" class="aaa">公益服务</a></li>
+                            <li class="dropdown"><a href="index04.html" class="aaa">设计团队</a></li>
+                            <li class="dropdown"><a href="index06.html" class="aaa">联系我们</a></li>
+                        </ul>
+                    </div>
+                </header>
+        <img src="img/b1.jpg" alt="">
+        <div class="btm_right fr1">
+            <div style="width: 200px;height: 50px;border: 0;background: #272624;"> <span id="sts" style="color: #fd9191"></span></div>
+               
+                <h2>咨询留言:</h2>
+                
+                <div action="" class="form fl1">
+                  <textarea name="content" id="txt" cols="30" rows="10" maxlength="120" placeholder="请输入咨询内容"></textarea>
+                  <p class="input_p clear"> 
+                    <!-- <span class="span1 fl1" style="letter-spacing:10px;">姓名</span>         -->
+                    <input type="text" maxlength="5" id="sname" placeholder="请输入您的姓名" class="txt" >
+                    <span id="spn"></span>
+                  </p>
+                  <p class="input_p clear">
+                                <!-- <span class="span1 fl1" style="letter-spacing:10px;">手机</span> -->
+                    <input type="text" id="tel" maxlength="11" placeholder="请输入您的手机号" class="txt">
+                  </p>
+                  <p class="sub_ziXun">
+                    <input  class="btn" type="button" id="btns" value="提交咨询">
+                  </p>
+                </div>
+        </div>
+        <div style="width: 100%;height: 100px;background: #1d1c18;margin-top: 150px;">
+            <a href="#" style="position: absolute;right: 20px;margin-top: 10px;"><img src="img/top.png" alt=""></a>
+            <p style="color: #fff; text-align: center;padding-top: 50px;">Copyright © 2019 版权所有 备案号：ICP备XXXXXXXX号 技术支持</p>
+        </div>
+    </div>
+            <script src="js/jquery-1.11.3.js"></script>
+            <script> 
+                $("#btns").click(function(){
+                    // console.log(1122);
+                    var txt=$("#txt").val();
+                    var sname=$("#sname").val();
+                    var tel=$("#tel").val();
+                    
+                    $("#tel").blur(function(){
+                        var regg=/^1[3-8]\d{9}$/;                 
+                            var u=$(this).val();
+                            if(!regg.test(u)){
+                                $(this).val("");
+                                sts.innerHTML=("手机号长度必须为11位")
+                                return; 
+                            }
+                        });
+                    $.ajax({
+                        url:"http://127.0.0.1:3000/user/ban",
+                        type:"post",
+                        data:{
+                            txt:txt,
+                            uname:sname,
+                            tel:tel,
+                        },
+                        dataType:"json"
+                    }).then(function(result){
+                        // console.log(result);
+                        
+                        if(result.code==401){
+                            sts.innerHTML=("将信息补充完整")
+                            return;
+                        }
+                        else if(result.code==402){
+                            sts.innerHTML=("将信息补充完整")
+                            return;
+                        }else if(result.code==404){
+                            sts.innerHTML=("将信息补充完整")
+                            return;
+                        }
+                        else{
+                            sts.innerHTML=("留言成功")
+                            $(" #txt").val("");
+                            $("#sname").val("");
+                            $("#tel").val("");
+                            console.log(txt);
+                        }
+                    });
+             });
+    </script>
+    
+</body>
+</html>

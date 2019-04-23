@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中式风格</title>
+    <link rel="stylesheet" href="css/index03_03.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        .al-right>ul.none{display: none;}
+        .show{ display: block;}
+    </style>
+</head>
+<body>
+        <header id="header">
+                <div>
+                    <ul class="dropdown-li">
+                        <li class="dropdown"><a href="index.html">首页</a></li>
+                        <li class="dropdown"><a href="index01.html">关于我们</a></li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index02.html">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Javascript:;">公司新闻</a></li>
+                                <li><a href="Javascript:;">行业新闻</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-trigger="dropdown" href="index03.html"style="color: #fee301">案例展示</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index03_01.html">现代风格</a>
+                                </li>
+                                <li>
+                                   <a href="index03_02.html">欧式风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_03.html">阳台风格</a>
+                                </li>
+                                <li>
+                                    <a href="index03_04.html"style="color: #fee301">中式风格</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="index05.html">工艺服务</a></li>
+                        <li class="dropdown"><a href="index04.html">设计团队</a></li>
+                        <li class="dropdown"><a href="index06.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </header>
+        <div id="AL">
+                <div id="al-top-img"><img src="img/b1.jpg" alt=""></div>
+                <!-- 案例展示CASE -->
+                <div id="al-mid">
+                    <p>案例展示<span>CASE</span></p>
+                </div>
+                <!-- 风格部分 -->
+                <div id="al-center">
+                    <!-- 左 -->
+                    <div id="al-left">
+                        <ul>
+                            <li><a href="javascript:;"class="dt active" data-id="ul1">现代风格</a></li>
+                            <li><a href="javascript:;"class="dt" data-id="ul2">欧式风格</a></li>
+                            <li><a href="javascript:;"class="dt" data-id="ul3">中式风格</a></li>
+                            <li><a href="javascript:;"class="dt" data-id="ul4">阳台风格</a></li>
+                        </ul>
+                    </div>
+                    <!-- 右 -->
+                    <div class="al-right">
+                        <!-- 现 -->
+                        <ul class="none" id="ul1">
+                            <!-- <li>
+                                <a href="">
+                                <img src="img/1-1PH6162941463.jpg" alt="">                       
+                                </a><h3>案例一</h3>
+                            </li>
+                            <li> 
+                                <a href="">
+                                <img src="img/1-1PH6162914638.jpg" alt="">                      
+                            </a><h3>案例二</h3>
+                            </li>
+                            <li>
+                                <a href="">
+                                <img src="img/1-1PH6162Ta11.jpg" alt="">
+                                </a><h3>案例三</h3>
+                            </li> -->
+                        </ul> 
+                       <!-- 欧 -->
+                        <ul class="none" id="ul2">
+                            <!-- <li>
+                                <a href="">
+                                <img src="img/1-1PZ5093530643.jpg" alt="">                       
+                                </a><h3>案例一</h3>
+                            </li>
+                            <li> 
+                                <a href="">
+                                <img src="img/1-1PH616302a21.jpg" alt="">                      
+                               </a><h3>案例二</h3>
+                            </li>
+                            <li>
+                                <a href="">
+                                <img src="img/1-1PH6163004H1.jpg" alt="">
+                                </a><h3>案例三</h3>
+                            </li> -->
+                        </ul>
+                        <!-- 中 show-->
+                        <ul class="show" id="ul3">
+                            <!-- <li>
+                                <a href="">
+                                <img src="img/1-1PH61632451R.jpg" alt="">                       
+                                </a><h3>案例一</h3>
+                            </li>
+                            <li> 
+                                <a href="">
+                                <img src="img/1-1PH6163524425.jpg" alt="">                      
+                               </a><h3>案例二</h3>
+                            </li>
+                            <li>
+                                <a href="">
+                                <img src="img/1-1PH6163152550.jpg" alt="">
+                                </a><h3>案例三</h3>
+                            </li> -->
+                        </ul>  
+                        <!-- 阳 -->
+                        <ul class="none" id="ul4">
+                            <!-- <li>
+                                <a href="">
+                                <img src="img/1-1PZ5093Q2602.jpg" alt="">                       
+                                </a><h3>案例一</h3>
+                            </li>
+                            <li> 
+                                <a href="">
+                                <img src="img/1-1PZ5093K3D3.jpg" alt="">                      
+                               </a><h3>案例二</h3>
+                            </li>
+                            <li>
+                                <a href="">
+                                <img src="img/1-1PH6163219505.jpg" alt="">
+                                </a><h3>案例三</h3>
+                            </li> -->
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <script src="js/jquery-1.11.3.js"></script>
+            <script src="js/index03-01.js"></script>
+            <script>
+                $(".dt").click(function(){
+                    // console.log($(this));               
+                    $(".active").removeClass("active");
+                    $(this).addClass("active");
+                    var id=$(this).attr("data-id")
+                   $(".al-right>ul.show").removeClass("show").addClass("none");
+                    // console.log($("#"+id));
+                    $("#"+id).attr("class","show");                                       
+                });
+            </script>
+            <script src="js/jquery-1.11.3.js"></script>
+            <script>
+                    //鼠标进入按钮父元素的div时，菜单显示
+                    // console.log($("[data-trigger=dropdown]").parent());
+                    $("[data-trigger=dropdown]").parent()
+                    .mouseover(function(){
+                        // console.log(111)
+                        //this->父元素div
+                        //查找父元素下孩子中最后一个孩子，让其显示
+                        $(this).children().last().show();
+                        // console.log( $(this).children().last());
+                    })
+                    //return $parent
+                    //鼠标移出按钮的 父元素嫡女时，菜单隐藏
+                    .mouseout(function(){
+                        $(this).children().last().hide();
+                        // console.log(12132)
+                    })
+                    // console.log($(".dropdow"));
+                    $(".aaa").click(function(){
+                        $(".active").removeClass("active");
+                        $(this).addClass("active");
+                        
+                    })
+            </script>
+            <!-- 底脚 -->
+    <div id="al-foot">
+        <a href="#"><img src="img/top.png" alt=""></a>
+        <p>Copyright © 2019 版权所有 备案号：ICP备XXXXXXXX号 技术支持</p>
+    </div>
+</body>
+</html>

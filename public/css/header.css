@@ -1,0 +1,105 @@
+/*给整个div背景颜色*/
+*{margin: 0;padding: 0;z-index: 5;}
+body{background: #ccc;}
+header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 10;
+    /* color: #fff; */
+}
+header>div{
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    border-bottom: 1px solid #000;
+    position: fixed;
+}
+/* 解决高度坍塌 */
+header>div>ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 清除圆点 */
+.dropdown {list-style:none;}
+/*导航栏的颜色 位置 内边距 字体大小*/
+.dropdown a{ 
+    text-decoration:none; 
+    color:#fff;
+    display:inline-block;
+    border:0px solid #000; 
+    padding:25px 25px 25px 10px;
+    font-size:1.3rem;
+    z-index: 10;
+    }
+/*鼠标悬浮到a标签上的字体颜色*/
+.dropdown>a:hover{color:#fee301;z-index: 10;}
+/*下拉选项的ul*/
+.dropdown-menu{
+    width:115px;
+    font-size: 1rem;
+    list-style:none; 
+    margin:0; padding:10px 0 0 0;
+    border:0px solid #aaa; 
+    display: none;
+    z-index: 11;
+    }
+/*给li左浮动*/
+div>.dropdown-li>li{float:left;z-index: 11;}
+header>div>.dropdown-li>.dropdown{margin-left: 1rem;z-index: 11;}
+/* 下拉选项的内边距、宽 */
+.dropdown-menu li a{
+    padding:12px; width:95px; 
+    z-index: 11; 
+}
+/*给下来项绝对定位*/
+div .dropdown .dropdown-menu{
+     position: absolute;
+     z-index: 11;
+}
+/* 下拉选项的hover */
+.dropdown-menu a:hover{
+    color:#fee301;z-index: 11;
+    text-align: center;
+    
+}
+/* 悬浮时 背景颜色 */
+.dropdown-menu li:hover{
+    background:rgba(0,0,0,0.3);z-index: 11;
+    
+}
+/* 点击变色 */
+.active{color: #ffe401 !important;}
+/*给整个div左外边距*/
+header>div>.dropdown-li{
+    /* margin-left:100px; */
+    
+}
+/*媒体查询 */
+ @media screen and (min-width:992px){
+    #header div{
+        width: 100%;  
+        text-align: center;
+    } 
+    #header>div .dropdown-li{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:991px){
+    #header div{
+        width: 100%;  
+        text-align: center;
+    } 
+    #header>div .dropdown-li{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:768px){
+    #header div{
+        width: 100%;  
+        text-align: center;
+    } 
+    #header>div .dropdown-li{
+        display: inline-block;
+    }
+}

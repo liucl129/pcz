@@ -1,0 +1,1343 @@
+*{margin: 0;padding: 0;}
+/* 关于我们 */
+#nav-first{
+    background: #1d1c18;width: 100%;
+    overflow: hidden;
+}
+#header div div{
+    text-align: right;
+    position: fixed;
+    top: 15px;
+    right: 50px;
+    text-decoration: none;
+    /* padding-bottom: 100px; */
+}
+a{text-decoration: none;}
+#header div div a:hover {text-decoration: none;color: #fee301}
+/* 底部 */
+#al-foot{
+    width: 100%;
+    height: 100px;
+    background: #1d1c18;
+    position: relative;
+}
+#al-foot>a img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+}
+.GL h1 span{font-size: 2rem}
+.mycolor{
+    text-decoration: node;
+    color:#fff;
+    position: relative;
+    right: 10px; 
+}
+ /* 媒体查询 1 */
+@media (min-width:1420px){
+    /* 导航栏 */
+    
+    /* 第一部分 */
+    .GL{
+    height: 940px;
+    position: relative;
+    top:150px;
+    }
+/* 顶层左侧部分 */
+/* about us */
+#nav-first>.GL>h1>p{
+    color:#fff;
+    font-size:3rem;
+    padding-top: 50px;
+    margin: 0;
+}
+/* 关于我们 */
+.GL>h1>span{
+    color:#fee301;
+    font-size:2rem;
+    position: relative;
+    left: -100px;
+    opacity:0;
+    transition: all .6s linear;
+}
+/* 给id为spn的span添加id为asd */
+#asd{
+    opacity:1 !important;
+    left:0px !important;
+}
+/* 注释 字体颜色  */
+.GL div p{
+    color:rgb(236, 232, 232);
+    width: 615px;
+    height: 320px;
+    font-size: 1rem;
+    font-weight: 200;
+    position: relative;
+    top:250px;
+    opacity: 0;
+    padding-bottom: 120px;
+    padding-top: 40px;
+    overflow: hidden;
+    transition:all 0.5s linear;
+    z-index: 1;
+}
+/*给id为div的添加id为tt */
+#tt p{
+    opacity:1 !important;
+    top:0px !important; 
+} 
+/* 给a标签添加宽 高 边框等。 */
+.GL>div>a{
+    width: 148px;height: 38px;
+    border:1px solid #fff;
+    display: block;
+    text-decoration:none;
+    line-height: 160px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+/* 关于我们的 a标签 */
+.GL>div>a>span{
+    color:#fff;
+    margin:0px auto;
+    width: 148px;
+    height:50px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s; 
+}
+/* 鼠标进入a标签 */
+.GL>div>a:hover{
+    border: 1px solid #fee301;
+}
+.GL>div>a:hover span{
+    color: #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    background: #fee301;
+}
+/* .GL 整体距离左边100px */
+.GL{margin-left: 100px;}
+/* 顶层右侧部分 */
+#nav-first div img{
+    float: left;
+    position: absolute;
+    right:0%;
+    top:0px;
+    width: 950px;
+    height: 930px; 
+}
+/* 第二部分 */
+
+
+/*整个中间案例展示 设置的宽高 背景色 */
+#nav-tow{
+    width: 100%;
+    height: 700px;
+    background: #272624;
+}
+/* class为zs的div 设置相对定位 左位置 上位置 */
+#nav-tow>div{
+    position: relative;
+    /* left:100px; */
+    top:90px;
+}
+/* div下面的h2设置宽高 */
+#nav-tow>div>h2{
+    width: 300px;
+    height: 100px;
+}
+/* 给CASE 样式 */
+#nav-tow>div>h2>b{
+    color: #fff;
+    font-size:3rem;
+    position: absolute;
+    left: 100px;
+    top:0px;
+}
+#nav-tow>div>h2>span{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+/* 给 字体 案例展示 样式*/
+#nav-tow>div>h2>span{
+    color: #fee301;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 48px;
+    
+}
+#nav-tow>div>div>ul{
+    margin-left: 80px;
+}
+/* 给li样式 */
+#nav-tow>div>div>ul>li{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    padding-top: 30px;
+    margin-top: 60px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+/* a标签 字体颜色、大小 去下划线 定位 */
+#nav-tow>div>div>ul>li span{
+    position: relative;
+    text-decoration: none;
+    color:#b6b6b6;
+    font-size:1.5rem;
+}
+/* 后加的黄色横线 */
+#nav-tow>div>div>ul>li span::after{
+    content:"";
+    position: absolute;
+    top:30px;
+    border:1px solid #fee301;
+    width:100%;
+    line-height: 100px;
+    left: -115%; 
+    transition: all 0.9s;
+    padding: 0;
+}
+/* 鼠标滑入效果 */
+#nav-tow>div>div>ul>li:hover span::after{
+left: 0;
+}
+/* 现代风格 img */
+/* 点击 */
+#hom{
+ position: relative;
+    top: 180px;
+    left: -390px;
+    
+}
+#hom1,#hom2,#hom3,#hom4{
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+#hom1,#hom2,#hom3,#hom4{
+    display: flex;
+    justify-content: space-around;
+}
+#hom img{
+    width: 400px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+#hom2,#hom3,#hom4{
+    /* position: absolute; */
+    visibility: hidden;
+    /* border:1px solid red; */
+}
+.img0 img:hover{
+    transform: scale(1.1);
+}
+
+/* 新闻部分 */
+/* 新闻部分整个div */
+#NW1{
+    width: 100%;
+    height: 800px;
+    background: #272624;
+}
+/*包裹 《NEWS  新闻动态》 的div*/
+.PD{
+    width: 150px;
+    height: 50px;    
+    margin: 0px auto;
+    line-height: 50px;
+    padding-top: 50px;
+}
+/*文字 《NEWS》 */
+.NEWS{
+    font-size: 3rem;
+    color:#fff; 
+}
+/* 文字 《新闻动态》 */
+.DT{
+    font-size: 2rem;
+    color:#fee301;
+}
+/* 包裹《图片和文字》的div */
+.newFirst{
+    width: 100%;
+    height: 250px;
+    /* border:1px solid red; */
+    position: relative;
+    top:100px;
+    color: #fff;
+    transition: all 1s linear;
+    font-weight: 700;
+    
+}
+
+/*鼠标进入 包裹《图片和文字》的div 效果*/
+ .newFirst:hover{
+    color:#000;
+    background: #fee301;
+    font-weight: 600;
+}
+.newFirst:hover .tts{
+    color:#000;
+}
+.newFirst div img{
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+.newFirst:hover img{
+    transform: scale(1.1);
+    
+}
+
+/* 左边图片 */
+.news div img{
+    padding: 25px 50px 50px 25px;
+    
+}
+/* 右边文字 */
+.xtext{
+    position: absolute;
+    top:80px;
+    left:500px;
+    overflow: hidden;
+}
+
+/* 右边a标签 文字 */
+.xtext a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight: 1000;
+    
+}
+/* 右边 新闻内容 */
+.xtext div{
+    width: 900px;
+    color: #b6b6b6;
+    font-size: 1rem;
+    line-height: 30px;
+    padding-top: 20px;
+}
+/* 关于我们的 a标签 */
+.newA{
+    position: relative;
+    width: 500px !important;
+    left: 850px;
+    top: 80px;
+    }
+/* 给a标签添加宽 高 边框等。 */
+.newA>a{
+    width: 148px;height: 38px;
+    border:1px solid #fff;
+    display: block;
+    text-decoration:none;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* 关于我们的 a标签 */
+.newA>a>span{
+    color:#fff;
+    margin:0px auto;
+    width: 148px;
+    height:50px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s; 
+}
+/* 鼠标进入a标签 */
+.newA>a:hover{
+    border: 1px solid #fee301;
+}
+.newA>a:hover span{
+    color: #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    background: #fee301;
+}
+
+/* Foot 底部css */
+/* Foot 大div的宽 高 */
+div.Foot{
+    width:100%;
+    /* height: 800px; */
+    background: #272624;
+}
+/* Foot 直尺的 上部 背景图 */
+div.top-bg{
+    background-image: url("../img/line.png");
+    width: 100%;
+    height: 60px;
+    
+}
+/* Foot 顶部居中的文字 */
+ div.top_txt{
+   text-align: center;
+  padding-top: 30px;
+}
+.top_txt h2{
+    font-size:2rem;
+    color: #fee301;
+    font-weight: 500;
+    line-height: 50px; 
+}
+.top_txt h4{
+    font-size:1.2rem;
+    color: #fff;
+    font-weight: 200;
+   
+}
+/* Foot  图标 */
+/* 去圆点 布局 */
+.middle-ul ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.middle-ul ul{line-height:100px;}
+/*包裹图片的圆 */
+.middle-ul div{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border:1px solid #b6b6b6;
+    background: rgb(100, 99, 99,0);
+}
+.middle-ul p{
+    color:#fff;
+    text-align: center;
+}
+/* a标签去下划线 */
+.middle-ul a{
+    text-decoration: none;
+    
+}
+.middle-ul li{
+    /* transition: all 0.5s linear; */
+}
+/* Foot 悬浮效果 */
+.middle-ul li:hover p{
+    color:#fee301;
+    transition: all 1s;
+}
+.middle-ul li:hover div{
+    /* background-color: #b6b6b6; */
+    background:rgba(90, 89, 89,1);
+    transition: all 1s;
+}
+.middle-ul li div img{transition: all 0.5s linear;}
+.middle-ul li:hover img{
+    transform: scale(1.1);
+}
+/* Foot 直尺的 底部 背景图 */
+div.button-bg{
+    background-image: url("../img/line2.png");
+    width: 100%;
+    height: 60px;
+    
+}
+
+}
+/* 媒体查询 2 */
+@media screen and (min-width:1180px) and (max-width:1419px){
+    .GL{
+     height: 750px;
+    position: relative;
+    top:180px;
+    }
+/* 顶层左侧部分 */
+/* about us */
+#nav-first>.GL>h1>p{
+    color:#fff;
+    font-size:3rem;
+    padding-top: 50px;
+    margin: 0;
+}
+/* 关于我们 */
+.GL>h1>span{
+    color:#fee301;
+    font-size:2rem;
+    position: relative;
+    left: -100px;
+    opacity:0;
+    transition: all .9s linear;
+}
+/* 给id为spn的span添加id为asd */
+#asd{
+    opacity:1 !important;
+    left:0px !important;
+}
+/* 注释 字体颜色  */
+.GL div p{
+    color:#fff;
+    width: 515px;
+    height: 110px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 2;
+    top:120px;
+    opacity: 0;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    overflow: hidden;
+    transition:all 0.9s linear;
+    z-index: 1;
+}
+/*给id为div的添加id为tt */
+#tt p{
+    opacity:1 !important;
+    top:0px !important; 
+} 
+/* 给a标签添加宽 高 边框等。 */
+.GL>div>a{
+    width: 148px;height: 38px;
+    border:1px solid #fff;
+    display: block;
+    text-decoration:none;
+    margin-top: 110px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+   
+}
+/* 关于我们的 a标签 */
+.GL>div>a>span{
+    color:#fff;
+    margin:0px auto;
+    width: 148px;
+    height:50px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s; 
+}
+/* 鼠标进入a标签 */
+.GL>div>a:hover{
+    border: 1px solid #fee301;
+}
+.GL>div>a:hover span{
+    color: #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    background: #fee301;
+}
+/* .GL 整体距离左边100px */
+.GL{margin-left: 100px;}
+/* 顶层右侧部分 */
+#nav-first div img{
+    float: left;
+    position: absolute;
+    right:0%;
+    top:0px;
+    width: 850px;
+    height: 750px; 
+}
+/* 第二部分 */
+/*整个中间案例展示 设置的宽高 背景色 */
+#nav-tow{
+    width: 100%;
+    height: 700px;
+    background: #272624;
+}
+/* class为zs的div 设置相对定位 左位置 上位置 */
+#nav-tow>div{
+    position: relative;
+    /* left:100px; */
+    top:90px;
+}
+/* div下面的h2设置宽高 */
+#nav-tow>div>h2{
+    width: 300px;
+    height: 100px;
+}
+/* 给CASE 样式 */
+#nav-tow>div>h2>b{
+    color: #fff;
+    font-size:3rem;
+    position: absolute;
+    left: 100px;
+    top:0px;
+}
+#nav-tow>div>h2>span{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+/* 给 字体 案例展示 样式*/
+#nav-tow>div>h2>span{
+    color: #fee301;
+    font-size: 2rem;
+    position: absolute;
+    top: 48px;
+    
+}
+#nav-tow>div>div>ul{
+    margin-left: 70px;
+}
+/* 给li样式 */
+#nav-tow>div>div>ul>li{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    padding-top: 30px;
+    /* margin-top: 30px; */
+    margin-left: 20px;
+    /* padding-bottom: 10px; */
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+/* a标签 字体颜色、大小 去下划线 定位 */
+#nav-tow>div>div>ul>li span{
+    position: relative;
+    text-decoration: none;
+    color:#b6b6b6;
+    font-size:1.5rem;
+}
+/* 后加的黄色横线 */
+#nav-tow>div>div>ul>li span::after{
+    content:"";
+    position: absolute;
+    top:30px;
+    border:1px solid #fee301;
+    width:100%;
+    line-height: 100px;
+    left: -115%; 
+    transition: all 0.9s;
+    padding: 0;
+}
+/* 鼠标滑入效果 */
+#nav-tow>div>div>ul>li:hover span::after{
+left: 0;
+}
+/* 现代风格 img */
+/* 点击 */
+#hom{
+ position: relative;
+    top: 150px;
+    left: -390px;
+    
+}
+#hom1,#hom2,#hom3,#hom4{
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+#hom1,#hom2,#hom3,#hom4{
+    display: flex;
+    justify-content: space-around;
+}
+#hom img{
+    width: 330px;
+    height: 280px;
+    margin-left: 20px;
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+#hom2,#hom3,#hom4{
+    /* position: absolute; */
+    visibility: hidden;
+    /* border:1px solid red; */
+}
+.img0 img:hover{
+    transform: scale(1.1);
+}
+
+/* 新闻部分 */
+/* 新闻部分整个div */
+#NW1{
+    width: 100%;
+    height: 800px;
+    background: #272624;
+}
+/*包裹 《NEWS  新闻动态》 的div*/
+.PD{
+    width: 150px;
+    height: 50px;    
+    margin: 0px auto;
+    line-height: 50px;
+    padding-top: 50px;
+}
+/*文字 《NEWS》 */
+.NEWS{
+    font-size: 3rem;
+    color:#fff; 
+}
+/* 文字 《新闻动态》 */
+.DT{
+    font-size: 2rem;
+    color:#fee301;
+}
+/* 包裹《图片和文字》的div */
+.newFirst{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top:100px;
+    color: #fff;
+    transition: all 1s linear;
+    font-weight: 600; 
+}
+
+/*鼠标进入 包裹《图片和文字》的div 效果*/
+ .newFirst:hover{
+    color:#000;
+    background: #fee301;
+    font-weight: 600;
+}
+.newFirst:hover .tts{
+    color:#000;
+}
+.newFirst div img{
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+.newFirst:hover img{
+    transform: scale(1.1);
+    
+}
+
+/* 左边图片 */
+.news div img{
+    padding: 25px 50px 50px 25px;
+    
+}
+/* 右边文字 */
+.xtext{
+    width: 609px;
+    position: absolute;
+    top:80px;
+    left:500px;
+    overflow: hidden;
+}
+
+/* 右边a标签 文字 */
+.xtext a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight: 1000;
+    
+}
+/* 右边 新闻内容 */
+.xtext div{
+    width: 900px;
+    color: #b6b6b6;
+    font-size: 1rem;
+    line-height: 30px;
+    padding-top: 20px;
+}
+/* 关于我们的 a标签 */
+.newA{
+    position: relative;
+    width: 350px !important;
+    left: 570px;
+    top: 80px;
+    }
+/* 给a标签添加宽 高 边框等。 */
+.newA>a{
+    width: 148px;height: 38px;
+    border:1px solid #fff;
+    display: block;
+    text-decoration:none;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* 关于我们的 a标签 */
+.newA>a>span{
+    color:#fff;
+    margin:0px auto;
+    width: 148px;
+    height:50px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s; 
+}
+/* 鼠标进入a标签 */
+.newA>a:hover{
+    border: 1px solid #fee301;
+}
+.newA>a:hover span{
+    color: #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    background: #fee301;
+}
+
+/* Foot 底部css */
+/* Foot 大div的宽 高 */
+div.Foot{
+    width:100%;
+    /* height: 800px; */
+    background: #272624;
+}
+/* Foot 直尺的 上部 背景图 */
+div.top-bg{
+    background-image: url("../img/line.png");
+    width: 100%;
+    height: 60px;
+    
+}
+/* Foot 顶部居中的文字 */
+ div.top_txt{
+   text-align: center;
+  padding-top: 30px;
+}
+.top_txt h2{
+    font-size:2rem;
+    color: #fee301;
+    font-weight: 500;
+    line-height: 50px; 
+}
+.top_txt h4{
+    font-size:1.2rem;
+    color: #fff;
+    font-weight: 200;
+   
+}
+/* Foot  图标 */
+/* 去圆点 布局 */
+.middle-ul ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.middle-ul ul{line-height:100px;}
+/*包裹图片的圆 */
+.middle-ul div{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border:1px solid #b6b6b6;
+    background: rgb(100, 99, 99,0);
+}
+.middle-ul p{
+    color:#fff;
+    text-align: center;
+}
+/* a标签去下划线 */
+.middle-ul a{
+    text-decoration: none;
+    
+}
+.middle-ul li{
+    /* transition: all 0.5s linear; */
+}
+/* Foot 悬浮效果 */
+.middle-ul li:hover p{
+    color:#fee301;
+    transition: all 1s;
+}
+.middle-ul li:hover div{
+    /* background-color: #b6b6b6; */
+    background:rgba(90, 89, 89,1);
+    transition: all 1s;
+}
+.middle-ul li div img{transition: all 0.5s linear;}
+.middle-ul li:hover img{
+    transform: scale(1.1);
+}
+/* Foot 直尺的 底部 背景图 */
+div.button-bg{
+    background-image: url("../img/line2.png");
+    width: 100%;
+    height: 60px;
+    
+}
+
+
+}
+/* 媒体查询 3 */
+@media screen and (min-width:768px) and (max-width:1179px){
+    #header div div{
+        text-align: right;
+        position: fixed;
+        top: 15px;
+        right: 0px;
+        text-decoration: none;
+        /* padding-bottom: 50px; */
+    }
+    a{text-decoration: none;}
+    #header div div a:hover {text-decoration: none;color: #fee301}
+    .GL{
+        height: 650px;
+       position: relative;
+       top:150px;
+       }
+   /* 顶层左侧部分 */
+   /* about us */
+   #nav-first>.GL>h1>p{
+       color:#fff;
+       font-size:2rem;
+       padding-top: 30px;
+       margin: 0;
+   }
+   /* 关于我们 */
+   .GL>h1>span{
+       color:#fee301;
+       font-size:2rem;
+       position: relative;
+       left: -100px;
+       opacity:0;
+       transition: all .9s linear;
+   }
+   /* 给id为spn的span添加id为asd */
+   #asd{
+       opacity:1 !important;
+       left:0px !important;
+   }
+   /* 注释 字体颜色  */
+   .GL div p{
+       color:#fff;
+       width: 415px;
+       height: 100px;
+       position: relative;
+       overflow: hidden;
+       top:120px;
+       opacity: 0;
+       padding-bottom: 50px;
+       padding-top: 40px;
+       transition:all 0.9s linear;
+       z-index: 1;
+   }
+   /*给id为div的添加id为tt */
+   #tt p{
+       opacity:1 !important;
+       top:0px !important; 
+   } 
+   /* 给a标签添加宽 高 边框等。 */
+   .GL>div>a{
+       width: 148px;height: 38px;
+       border:1px solid #fff;
+       display: block;
+       text-decoration:none;
+       padding-bottom: 10px;
+       margin-top: 50px;
+       margin-bottom: 50px;
+   }
+   /* 关于我们的 a标签 */
+   .GL>div>a>span{
+       color:#fff;
+       margin:0px auto;
+       width: 148px;
+       height:50px;
+       padding: 0;
+       display: block;
+       position: relative;
+       top: 0;
+       text-align: center;
+       line-height: 50px;
+       transition: 0.5s; 
+   }
+   /* 鼠标进入a标签 */
+   .GL>div>a:hover{
+       border: 1px solid #fee301;
+   }
+   .GL>div>a:hover span{
+       color: #000;
+       width: 130px;
+       height: 35px;
+       line-height: 35px;
+       position: relative;
+       top: 7.5px;
+       text-align: center;
+       background: #fee301;
+   }
+   /* .GL 整体距离左边100px */
+   .GL{margin-left: 100px;}
+   /* 顶层右侧部分 */
+#nav-first div img{
+    float: left;
+    position: absolute;
+    right:0%;
+    top:0px;
+    width: 650px;
+    height: 650px; 
+}
+/* 第二部分 */
+/*整个中间案例展示 设置的宽高 背景色 */
+#nav-tow{
+    width: 100%;
+    height: 700px;
+    background: #272624;
+}
+/* class为zs的div 设置相对定位 左位置 上位置 */
+#nav-tow>div{
+    position: relative;
+    /* left:100px; */
+    top:90px;
+}
+/* div下面的h2设置宽高 */
+#nav-tow>div>h2{
+    width: 300px;
+    height: 100px;
+    /* line-height: 20px; */
+}
+/* 给CASE 样式 */
+#nav-tow>div>h2>b{
+    color: #fff;
+    font-size:3rem;
+    position: absolute;
+    left: 100px;
+    top:0px;
+    padding-bottom: 20px;
+}
+#nav-tow>div>h2>span{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+/* 给 字体 案例展示 样式*/
+#nav-tow>div>h2>span{
+    color: #fee301;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 48px;
+    
+}
+#nav-tow>div>div>ul{
+    margin-left: 80px;
+}
+/* 给li样式 */
+#nav-tow>div>div>ul>li{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    padding-top: 30px;
+    margin-top: 60px;
+    margin: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+/* a标签 字体颜色、大小 去下划线 定位 */
+#nav-tow>div>div>ul>li span{
+    position: relative;
+    text-decoration: none;
+    color:#b6b6b6;
+    font-size:1.5rem;
+}
+/* 后加的黄色横线 */
+#nav-tow>div>div>ul>li span::after{
+    content:"";
+    position: absolute;
+    top:30px;
+    border:1px solid #fee301;
+    width:100%;
+    line-height: 100px;
+    left: -115%; 
+    transition: all 0.9s;
+    padding: 0;
+}
+/* 鼠标滑入效果 */
+#nav-tow>div>div>ul>li:hover span::after{
+left: 0;
+}
+/* 现代风格 img */
+/* 点击 */
+#hom{
+ position: relative;
+    top: 180px;
+    left: -390px;
+    
+}
+#hom1,#hom2,#hom3,#hom4{
+    position: absolute;
+    top: 0px;
+    left: 480px;
+}
+#hom1,#hom2,#hom3,#hom4{
+    display: flex;
+    justify-content: space-around;
+}
+#hom img{
+    width: 300px;
+    height: 250px;
+    margin-left: 15px;
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+#hom2,#hom3,#hom4{
+    /* position: absolute; */
+    visibility: hidden;
+    /* border:1px solid red; */
+}
+.img0 img:hover{
+    transform: scale(1.1);
+}
+
+/* 新闻部分 */
+/* 新闻部分整个div */
+#NW1{
+    width: 100%;
+    height: 800px;
+    background: #272624;
+}
+/*包裹 《NEWS  新闻动态》 的div*/
+.PD{
+    width: 150px;
+    height: 50px;    
+    margin: 0px auto;
+    line-height: 50px;
+    padding-top: 50px;
+}
+/*文字 《NEWS》 */
+.NEWS{
+    font-size: 3rem;
+    color:#fff; 
+}
+/* 文字 《新闻动态》 */
+.DT{
+    font-size: 2rem;
+    color:#fee301;
+}
+/* 包裹《图片和文字》的div */
+.newFirst{
+    width: 100%;
+    height: 250px;
+    /* border:1px solid red; */
+    position: relative;
+    top:100px;
+    color: #fff;
+    transition: all 1s linear;
+    font-weight: 700;
+    
+}
+
+/*鼠标进入 包裹《图片和文字》的div 效果*/
+ .newFirst:hover{
+    color:#000;
+    background: #fee301;
+    font-weight: 600;
+}
+.newFirst:hover .tts{
+    color:#000;
+}
+.newFirst div img{
+    border-radius: 5%;
+    transition: all 0.5s linear;
+}
+.newFirst:hover img{
+    transform: scale(1.1);
+    
+}
+
+/* 左边图片 */
+.news div img{
+    padding: 25px 50px 50px 25px;
+    
+}
+/* 右边文字 */
+.xtext{
+    width: 480px;
+    position: absolute;
+    top:80px;
+    left:500px;
+    overflow: hidden;
+}
+
+/* 右边a标签 文字 */
+.xtext a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight: 1000;
+    
+}
+/* 右边 新闻内容 */
+.xtext div{
+    width: 900px;
+    color: #b6b6b6;
+    font-size: 1rem;
+    line-height: 30px;
+    padding-top: 20px;
+}
+/* 关于我们的 a标签 */
+.newA{
+    position: relative;
+    width: 120px !important;
+    left: 570px;
+    top: 80px;
+    }
+/* 给a标签添加宽 高 边框等。 */
+.newA>a{
+    width: 148px;height: 38px;
+    border:1px solid #fff;
+    display: block;
+    text-decoration:none;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* 关于我们的 a标签 */
+.newA>a>span{
+    color:#fff;
+    margin:0px auto;
+    width: 148px;
+    height:50px;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s; 
+}
+/* 鼠标进入a标签 */
+.newA>a:hover{
+    border: 1px solid #fee301;
+}
+.newA>a:hover span{
+    color: #000;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: 7.5px;
+    text-align: center;
+    background: #fee301;
+}
+
+/* Foot 底部css */
+/* Foot 大div的宽 高 */
+div.Foot{
+    width:100%;
+    /* height: 800px; */
+    background: #272624;
+}
+/* Foot 直尺的 上部 背景图 */
+div.top-bg{
+    background-image: url("../img/line.png");
+    width: 100%;
+    height: 60px;
+    
+}
+/* Foot 顶部居中的文字 */
+ div.top_txt{
+   text-align: center;
+  padding-top: 30px;
+}
+.top_txt h2{
+    font-size:2rem;
+    color: #fee301;
+    font-weight: 500;
+    line-height: 50px; 
+}
+.top_txt h4{
+    font-size:1.2rem;
+    color: #fff;
+    font-weight: 200;
+   
+}
+/* Foot  图标 */
+/* 去圆点 布局 */
+.middle-ul ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.middle-ul ul{line-height:100px;}
+/*包裹图片的圆 */
+.middle-ul div{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border:1px solid #b6b6b6;
+    background: rgb(100, 99, 99,0);
+}
+.middle-ul p{
+    color:#fff;
+    text-align: center;
+}
+/* a标签去下划线 */
+.middle-ul a{
+    text-decoration: none;
+    
+}
+/* Foot 悬浮效果 */
+.middle-ul li:hover p{
+    color:#fee301;
+    transition: all 1s;
+}
+.middle-ul li:hover div{
+    /* background-color: #b6b6b6; */
+    background:rgba(90, 89, 89,1);
+    transition: all 1s;
+}
+.middle-ul li div img{transition: all 0.5s linear;}
+.middle-ul li:hover img{
+    transform: scale(1.1);
+}
+/* Foot 直尺的 底部 背景图 */
+div.button-bg{
+    background-image: url("../img/line2.png");
+    width: 100%;
+    height: 60px;
+    
+}}
+/* 最底部 */
+/* 底部 */
+/* 底部 */
+#al-foot{
+    width: 100%;
+    height: 100px;
+    background: #1d1c18;
+    position: relative;
+}
+#al-foot>a img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+}
+#al-foot p{
+    color: #ccc;
+    font-size:0.8rem; 
+    text-align: center;
+    line-height: 100px;
+}
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/index01.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body onload="Gdu()">
+    <header id="header">
+        <div>
+            <ul class="dropdown-li">
+                <li class="dropdown"><a href="index.html">首页</a></li>
+                <li class="dropdown"><a href="index01.html" style="color: #fee301">关于我们</a></li>
+                <li class="dropdown">
+                    <a data-trigger="dropdown" href="index02.html">新闻动态</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Javascript:;">公司新闻</a></li>
+                        <li><a href="Javascript:;">行业新闻</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-trigger="dropdown" href="index03.html">案例展示</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index03_01.html">现代风格</a>
+                        </li>
+                        <li>
+                           <a href="index03_02.html">欧式风格</a>
+                        </li>
+                        <li>
+                            <a href="index03_03.html">阳台风格</a>
+                        </li>
+                        <li>
+                            <a href="index03_04.html">中式风格</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="index05.html">工艺服务</a></li>
+                <li class="dropdown"><a href="index04.html">设计团队</a></li>
+                <li class="dropdown"><a href="index06.html">联系我们</a></li>
+            </ul>
+        </div>
+    </header>    
+    <div class="top-img"></div>
+    <div class="GY">
+        <div id="HS" class="HS">
+            <p>
+                关于我们<span>ABOUT US</span></p>
+        </div>
+        <!-- <hr> -->
+        <div class="Gtxt">
+            <div id="l"></div>
+            <div id="r">
+                <ul>
+                    <li>萌芽时期</li>
+                    <li>在公司出现以前，个人独资企业是最典型的企业形式；与独资企业并存的是各种合伙组织，当时的合伙组织中最典型的就是家族经营团体。</li>
+                    <li>在公司产生以前，合伙组织都没有取得法人的地位，但是却有其他的一些法人团体出现。这种情况最早可以追溯至古罗马时期。在古罗马，国家、地方自治团体、寺院等宗教团体、养老院等公益慈善团体都取得了法人的地位。到了中世纪，有一些贸易团体取得了法人的资格，尤其是其中从事海外贸易的组织。在中世纪英国，这样的组织享有相对合伙更大的独立性。 </li>
+                    <li>无限公司</li>
+                    <li>最早产生的公司是无限公司。但是，无限公司与合伙没有本质上的区别，只是取得了法人地位的合伙组织而已。</li>
+                    <li>有关无限公司的第一个立法是1673年法国路易十四的《商事条例》，在当时被称为普通公司。在1807年的《法国商法典》中又改名为合名公司。《日本商法典》中也规定有“合名会社”。无限公司在产生以后，曾经有过长足的发展，但是随着股份有限公司和有限责任公司的产生，无限公司已经退居次要位置。 </li>
+                    <li>两合公司</li>
+                    <li>两合公司是由15世纪出现的康曼达组织演变而来的。在康曼达组织中，一部分人出资，但是承担有限责任；一部分人出力，但是承担无限责任。后来，康曼达组织发展为两种企业形式，一种是隐名合伙（有限合伙），一种是两合公司。在股份有限公司出现以后，两合公司还演变出了一种新的形式：股份两合公司。但是最终由于股份有限公司和有限责任公司的出现，两合公司也没有得到很大规模的发展。 </li>
+                    <li>股份有限公司</li>
+                    <li>1555年，英国女皇特许与俄国公司进行贸易，从而产生了第一个现代意义上的股份有限公司。一般认为，股份有限公司起源于17世纪英国、荷兰等国设立的殖民公司，比如著名的英国东印度公司和荷兰东印度公司就是最早的股份有限公司。1807年，《法国商法典》第一次对股份有限公司作了完备、系统的规定。到现在，股份有限公司已经成为西方资本主义世界占统治地位的公司形式。 </li>
+                    <li>有限责任公司</li>
+                    <li>有限责任公司最早产生于19世纪末的德国。有限公司基本吸收了无限公司、股份有限公司的优点，避免了两者的不足，尤其适用于中小企业。最早的有限责任公司立法为1892年德国的《有限责任公司法》。之后，1919年的法国，1938年的日本也相继制定了《有限公司法》。</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <div class="Gfoot"></div> -->
+    <div id="al-foot">
+        <a href="#"><img src="img/top.png" alt=""></a>
+        <p>Copyright © 2019 版权所有 备案号：ICP备XXXXXXXX号 技术支持</p>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+         var id=document.querySelector("#HS");
+        function Gdu(){
+            HS.setAttribute("id","hs");
+                   
+        };
+        $(".aaa").click(function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+                
+            })
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+            //鼠标进入按钮父元素的div时，菜单显示
+            // console.log($("[data-trigger=dropdown]").parent());
+			$("[data-trigger=dropdown]").parent()
+			.mouseover(function(){
+                // console.log(111)
+				//this->父元素div
+				//查找父元素下孩子中最后一个孩子，让其显示
+                $(this).children().last().show();
+                // console.log( $(this).children().last());
+			})
+			//return $parent
+			//鼠标移出按钮的 父元素嫡女时，菜单隐藏
+			.mouseout(function(){
+                $(this).children().last().hide();
+                // console.log(12132)
+            })
+            // console.log($(".dropdow"));
+            $(".aaa").click(function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+                
+            })
+    </script>
+    
+</body>
+</html>

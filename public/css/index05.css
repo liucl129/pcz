@@ -1,0 +1,97 @@
+*{margin: 0;padding: 0;}
+ #sj-top-img img{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;margin: 0;
+    
+} 
+ #SJ{
+     background: #272624;
+     overflow: hidden;
+    }
+div p{
+    color:#fee301;
+    font-size: 2rem;
+}
+div span{
+    color:#fff;
+    font-size:1.2rem;
+}
+.sj-p{
+    /* width: 100%; */
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    font-size: 2rem;
+    position: relative;
+    left: -100px;
+    opacity:1;
+    transition: all 1s linear;
+}
+#txt{
+    opacity: 1 !important;
+    left: 100px !important;
+}
+/* 中间 */
+
+/* 风格部分 */
+#al-center{
+    display: flex;
+    justify-content: space-around;
+}
+/* 左侧 */
+#al-left{
+    width: 30%;
+    border: 1px solid #ccc;
+    border-left:none;
+    border-bottom:none;
+    height: 650px;
+}
+
+#al-left ul li:hover a{
+    color:#ffe401;
+}
+/* 右侧 */
+.al-right{
+    width: 70%;
+    border:1px solid #ccc;
+    border-left:none;
+    border-bottom:none;
+    height: 650px;
+    overflow: hidden;
+    
+}
+.al-right ul{
+    /* display: flex;
+    justify-content: space-around; */
+    list-style: none;
+    margin-top: 50px;
+   text-align: left;
+}
+.al-right ul li{
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.al-right ul li p{
+    font-size: 1rem;
+    color: #ccc;
+}
+/* 底部 */
+#al-foot{
+    width: 100%;
+    height: 100px;
+    background: #1d1c18;
+    position: relative;
+}
+#al-foot>a img{
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+}
+#al-foot p{
+    color: #ccc;
+    font-size:0.8rem; 
+    text-align: center;
+    line-height: 100px;
+}
