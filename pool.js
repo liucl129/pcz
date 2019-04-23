@@ -5,8 +5,8 @@ var pool=mysql.createPool({
     port     : process.env.MYSQL_PORT,
     user     : process.env.ACCESSKEY,
     password : process.env.SECRETKEY,
-    database : 'app_' + process.env.APPNAME,
-	connectionLimit:5
+    database : 'app_' + process.env.APPNAME
+
 });
 //导出连接池对象pool
 module.exports=pool;
